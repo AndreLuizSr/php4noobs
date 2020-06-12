@@ -36,7 +36,7 @@ A estrutura condicional `if` recebe um valor e resolve, colocando a resposta com
 Estrutura de código para a condição **IF/ELSE**:
 
 ```
-if (condition) {
+if (condição) {
     // condição verdadeira
     // faça algo
 } else {
@@ -106,11 +106,11 @@ Quando vemos algum tipo de condição de if/else, o IDEAL é que seja duas possi
 Na prática, você pode ter N checagens para interpretar uma resposta retornando VERDADEIRO, até chegar na condição FALSA. Entenda o exemplo abaixo:
 
 ```
-if (first condition) {
+if (primeira condição) {
     // condição verdadeira
-} else if(second condition) {
+} else if(segunda condição) {
     // condição verdadeira
-} else if(third condition) {
+} else if(terceira condição) {
     // condição verdadeira
 } else {
     // condição falsa
@@ -233,7 +233,7 @@ Vamos a possíveis exemplos:
 ```
 Modelos de ternário
 
-condition ? case true : case false;
+condição ? se verdadeiro : se falso;
 ```
 
 Exemplo #1
@@ -241,7 +241,7 @@ Exemplo #1
 ```php
 $nickname = 'danielhe4rt';
 
-$who = $nickname == "jorge123" ? "é o jorge online" : "não é o jorge online";
+$who = ($nickname == "jorge123" ? "é o jorge online" : "não é o jorge online");
 
 echo $who; //  não é o jorge online
 
@@ -255,3 +255,6 @@ $modoTeste = true;
 return $modoTeste  ? "MODO DESENVOLVIMENTO ATIVADO" : "MODO DESENVOLVIMENTO DESATIVADO";
 // return MODO DESENVOLVIMENTO ATIVADO
 ```
+### Notas
+
+- Os parênteses não são obrigatórios no ternário, no entanto para ajudar na legibilidade do código é recomendado adicionar.
